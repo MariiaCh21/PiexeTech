@@ -219,10 +219,22 @@ nav ul li a.active {
 }
 
 /* PRIMARY BUTTON */
-
+button,
+input[type="submit"],
+input[type="button"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
 .btn-primary {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
     overflow: hidden;
 
     padding: 12px 25px;
@@ -231,6 +243,7 @@ nav ul li a.active {
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
+    line-height: 1;
 
     transition: transform 0.2s ease;
     outline: none;
