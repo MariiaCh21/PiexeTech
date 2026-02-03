@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixieTech</title>
+    <title>Kontakt | PixieTech</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,11 +24,62 @@
             </ul>
         </nav>
     </header>
+    <section class="hero hero-other">
+        <div class="hero-content">
+            <h2 class="about-titel">Kontakt</h2>
+        </div>
+    </section>
     <div class="main-content">
         <div class="container">
             <main>
-                <h2>Wilkommen auf der Kontakt Seite</h2>
-                <p>Hier kannst du Kontakt mit uns finden</p>
+                <section class="contact-intro">
+                    <p>
+                        Direkter Kontakt für Fragen, Support oder kurze Abstimmungen.
+                    </p>
+                </section>
+                <section class="contact-cards">
+                    <article class="contact-card">
+                        <h3>Allgemeine Anfragen</h3>
+                        <p>
+                            Für allgemeine Fragen, Kooperationen oder Rückfragen.
+                        </p>
+                        <a href="mailto:kontakt@pixietech.de" class="contact-link">
+                            kontakt@pixietech.de
+                        </a>
+                    </article>
+                    <article class=" contact-card">
+                        <h3>Support</h3>
+                        <p>
+                            Bei technischen Fragen oder bestehenden Projekten.
+                        </p>
+                        <a href="mailto:support@pixietech.de" class="contact-link">
+                            support@pixietech.de
+                        </a>
+                    </article>
+                    <article class="contact-card">
+                        <h3> Kurze Nachricht senden</h3>
+                        <p>
+                            Für kurze Fragen - kein Projektformular.
+                        </p>
+                        <form class="contact-card contact-form-card">
+                            <input type="text" placeholder="Ihr Name" required>
+                            <input type="email" placeholder="Ihre E.Mail-Adresse" required>
+                            <textarea placeholder="Ihre Nachricht" rows="3" required></textarea>
+                            <button type="submit" class="btn-primary btn-pink">
+                                Nachricht senden
+                            </button>
+                        </form>
+                    </article>
+                </section>
+                <section class="contact-cta">
+                    <h3>Sie haben ein konkretes Projekt im Kopf?</h3>
+                    <p>
+                        Nutzen Sie unser Projektformular für eine strukturierte Anfrage.
+                    </p>
+                    <a href="contact-form.html" class="btn-primary btn-pink">
+                        Projekt besprechen
+                    </a>
+                </section>
             </main>
         </div>
     </div>
