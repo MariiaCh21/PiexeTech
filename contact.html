@@ -17,7 +17,7 @@
         </button>
         <nav class="main-nav">
             <ul>
-                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Über uns</a></li>
                 <li><a href="services.html">Dienstleistungen</a></li>
                 <li><a href="contact.html" class="active">Kontakt</a></li>
@@ -26,7 +26,7 @@
     </header>
     <section class="hero hero-other">
         <div class="hero-content">
-            <h2 class="about-titel">Kontakt</h2>
+            <h2 class="secondary-titel">Kontakt</h2>
         </div>
     </section>
     <div class="main-content">
@@ -61,7 +61,7 @@
                         <p>
                             Für kurze Fragen - kein Projektformular.
                         </p>
-                        <form class="contact-card contact-form-card">
+                        <form class="contact-form-card" id="contactShortForm">
                             <input type="text" placeholder="Ihr Name" required>
                             <input type="email" placeholder="Ihre E.Mail-Adresse" required>
                             <textarea placeholder="Ihre Nachricht" rows="3" required></textarea>
@@ -69,9 +69,17 @@
                                 Nachricht senden
                             </button>
                         </form>
+                        <div class="contact-success" id="contactSuccess">
+                            <h4>Vielen Dank!</h4>
+                            <p>
+                                Ihre Nachricht wurde gesendet.
+                                Wir melden uns zeitnah bei Ihnen
+                            </p>
+                        </div>
                     </article>
                 </section>
-                <section class="contact-cta">
+                <div class="divider"></div>
+                <section class="secondary-cta">
                     <h3>Sie haben ein konkretes Projekt im Kopf?</h3>
                     <p>
                         Nutzen Sie unser Projektformular für eine strukturierte Anfrage.

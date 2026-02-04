@@ -74,3 +74,16 @@ cards.forEach(card => {
 });
 
 startAutoHighlight();
+
+
+const shortForm = document.getElementById("contactShortForm");
+const shortSuccess = document.getElementById("contactSuccess");
+
+if (shortForm) {
+    shortForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        shortForm.style.display = "none";
+        shortSuccess.classList.add("show");
+    })
+}
