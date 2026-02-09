@@ -39,15 +39,16 @@ if (form && successMessage) {
 });
 
 const newsletterForm = document.getElementById("newsletterForm");
+const newsletterContent = document.getElementById("newsletterContent");
 const newsletterSuccess = document.getElementById("newsletterSuccess");
 
-if (newsletterForm && newsletterSuccess) {
+if (newsletterForm && newsletterContent && newsletterSuccess) {
     newsletterForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        newsletterForm.style.display = "none";
+        newsletterContent.style.display = "none";
         newsletterSuccess.style.display = "block";
-    })
+    });
 }
 
 const cards = document.querySelectorAll('.card');
@@ -77,13 +78,14 @@ startAutoHighlight();
 
 
 const shortForm = document.getElementById("contactShortForm");
+const shortContent = document.getElementById("contactContent");
 const shortSuccess = document.getElementById("contactSuccess");
 
-if (shortForm) {
+if (shortForm && shortContent && shortSuccess) {
     shortForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        shortForm.style.display = "none";
+        shortContent.style.display = "none";
         shortSuccess.classList.add("show");
-    })
+    });
 }
